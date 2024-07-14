@@ -24,7 +24,5 @@ body {
     border-radius: 10px;
     border-color: #435367;
     border-width: 2px;
-    /* border-style: solid; */
     display: flex;
-    justify-content: space-between;
 }
