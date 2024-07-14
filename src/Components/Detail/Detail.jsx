@@ -2,7 +2,7 @@ import './Detail.css';
 
 const Detail = () => {
     return (
-        <div className="">
+        <div className="detail">
             Detail
         </div>
     )

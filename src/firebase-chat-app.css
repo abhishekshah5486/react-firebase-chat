@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 body {
@@ -24,4 +25,6 @@ body {
     border-color: #435367;
     border-width: 2px;
     /* border-style: solid; */
+    display: flex;
+    justify-content: space-between;
 }
