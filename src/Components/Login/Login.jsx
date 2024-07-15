@@ -22,11 +22,12 @@ const Login = () => {
         }
 
     }
-    const handleSignUp = () => {
+    const handleSignUp = (e) => {
+        e.preventDefault();
 
     }
-    const handleSignIn = () => {
-
+    const handleSignIn = (e) => {
+        e.preventDefault();
     }
     return (
         <div className='login-page'>

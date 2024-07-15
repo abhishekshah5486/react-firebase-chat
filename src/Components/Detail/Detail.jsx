@@ -9,7 +9,7 @@ const Detail = () => {
         <div className="detail">
             <div className="detail-user-info">
                 <img src={userProfile} alt="" />
-                <h2>Kushagra Srivastava</h2>
+                <h2 className='gradient-text'>Kushagra Srivastava</h2>
                 <p>Lorem ipsum itle.</p>
             </div>
             <div className="info">

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import userProfile from '../../../Assets/Images/userProfile2.png';
+import AddUser from './AddUser';
 
 const ChatList = () => {
     const [addMode, setAddMode] = useState(false);
@@ -92,6 +93,7 @@ const ChatList = () => {
                     <p>Hey, How are you doing?</p>
                 </div>
             </div>
+            {addMode && <AddUser/>}
         </div>
     )
 }

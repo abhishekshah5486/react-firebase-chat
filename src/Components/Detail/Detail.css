@@ -18,6 +18,14 @@
             height: 100px;
             width: 100px;
         }
+
+        .gradient-text{
+            background: linear-gradient(to right, #4c83f0, #8b76d3, #d86573, #d3677b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+        }
     }
     .info {
         padding: 20px;

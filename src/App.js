@@ -7,7 +7,7 @@ import Chat from './Components/Chat';
 import Login from './Components/Login';
 
 function App() {
-  const user = false;
+  const user = true;
 
   return (
     <div className={`firebase-chat-app ${user ? 'logged-in' : 'logged-out'}`}>
