@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJnK9N1aEA7w6M1S5mJ5-EVsBdJKnTWMI",
+  apiKey: import.meta.env.API_KEY,
   authDomain: "fir-chat-app-9cf85.firebaseapp.com",
   projectId: "fir-chat-app-9cf85",
   storageBucket: "fir-chat-app-9cf85.appspot.com",
