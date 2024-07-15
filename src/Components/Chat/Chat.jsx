@@ -4,11 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone, faVideo, faCircleInfo, faImage, faCamera, faMicrophone} from '@fortawesome/free-solid-svg-icons';
 import {faFaceSmile} from '@fortawesome/free-regular-svg-icons';
 import EmojiPicker from 'emoji-picker-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Chat = () => {
     const [open, setOpen] = useState(false);
     const [text, setText] = useState('');
+    const endRef = useRef(null);
+
+    useEffect(() => {
+        endRef.current.scrollIntoView({behavior: "smooth"});
+    }, [])
     const handleEmoji = (e) => {
         console.log(e);
         setText(prev => prev + e.emoji);
@@ -51,6 +56,19 @@ const Chat = () => {
                     <span>1 min ago</span>
                 </div>
                </div>
+               <div className="message own">
+                <div className="texts">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nihil ut, vel et fugit iure tenetur assumenda quo necessitatibus voluptatem aut at tempore possimus perspiciatis? Velit pariatur labore quibusdam temporibus?</p>
+                    <span>1 min ago</span>
+                </div>
+               </div>
+               <div className="message own">
+                <div className="texts">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nihil ut, vel et fugit iure tenetur assumenda quo necessitatibus voluptatem aut at tempore possimus perspiciatis? Velit pariatur labore quibusdam temporibus?</p>
+                    <span>1 min ago</span>
+                </div>
+               </div>
+               <div ref={endRef}></div>
             </div>
             <div className="bottom-section">
                 <div className="btm-section-icons">
