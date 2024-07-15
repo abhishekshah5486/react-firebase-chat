@@ -5,6 +5,7 @@ import appleLogo from '../../Assets/Icons/apple-logo.svg';
 import githubLogo from '../../Assets/Icons/github-logo.svg';
 import googleLogo from '../../Assets/Icons/google-logo.svg';
 import appleLogo2 from '../../Assets/Icons/appleLogo2.svg';
+import { message } from 'antd';
 
 const Login = () => {
     const [avatar, setAvatar] = useState({
