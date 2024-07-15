@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;;
     color: white;
 }
 
@@ -10,7 +10,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #131314;
-    /* background-color: #031525; */
     background-color: black;
     display: flex;
     align-items: center;
@@ -18,8 +17,8 @@ body {
 }
 
 .firebase-chat-app {
-    height: 80vh;
-    width: 80vw;
+    height: 85vh;
+    width: 90vw;
     background-color: #041e49;
     border-radius: 10px;
     border-color: #435367;

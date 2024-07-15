@@ -1,3 +1,6 @@
 .detail {
-    
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #435367;
+    width: 30%;
 }

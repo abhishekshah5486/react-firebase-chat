@@ -1,0 +1,35 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #435367;
+    width: 50%;
+
+    .top-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #435367;
+
+        .chat-user-info {
+            display: flex;
+            gap: 20px;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+            .texts{
+                p{
+                    font-size: 15px;
+                    color: #9badc6;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+    .center-section{
+        overflow: scroll;
+    }
+}
