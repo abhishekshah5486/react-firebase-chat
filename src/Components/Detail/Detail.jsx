@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown, faDownload,  faCircleChevronDown, faCircleChevronUp} from '@fortawesome/free-solid-svg-icons';
 import tempImage from '../../Assets/Images/userProfile.jpg';
 
-const Detail = () => {
+const Detail = ({auth, signOut}) => {
     return (
         <div className="detail">
             <div className="detail-user-info">
@@ -51,7 +51,7 @@ const Detail = () => {
                 </div>
             </div>
             <button className='blockUserBtn'>Block User</button>
-            <button className="logout">Logout</button>
+            <button className="logout" onClick={ () => signOut(auth) }>Logout</button>
         </div>
     )
 }

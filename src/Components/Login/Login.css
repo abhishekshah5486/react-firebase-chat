@@ -51,6 +51,7 @@
                 background-color: #e50815;
                 border-radius: 5px;
                 font-size: 17px;
+                color: white;
 
                 &:disabled{
                     cursor: not-allowed;
@@ -130,6 +131,7 @@
                 background-color: #e50815;
                 border-radius: 5px;
                 font-size: 17px;
+                color: white;
 
                 &:disabled{
                     cursor: not-allowed;
