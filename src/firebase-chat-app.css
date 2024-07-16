@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;;
-    color: white;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .firebase-chat-app {

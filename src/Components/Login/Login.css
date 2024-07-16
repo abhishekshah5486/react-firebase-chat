@@ -51,6 +51,11 @@
                 background-color: #e50815;
                 border-radius: 5px;
                 font-size: 17px;
+
+                &:disabled{
+                    cursor: not-allowed;
+                    background-color: #e508177b;
+                }
             }
             button:hover{
                 background-color: #920008;
@@ -125,6 +130,11 @@
                 background-color: #e50815;
                 border-radius: 5px;
                 font-size: 17px;
+
+                &:disabled{
+                    cursor: not-allowed;
+                    background-color: #e508177b;
+                }
             }
             button:hover{
                 background-color: #920008;
