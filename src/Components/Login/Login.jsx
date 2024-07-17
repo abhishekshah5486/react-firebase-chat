@@ -53,7 +53,9 @@ const Login = () => {
                 }, 1000)
             });
 
-            const imageUrl = await upload(avatar.file);
+            let imageUrl;
+            if (avatar.file) imageUrl = await upload(avatar.file);
+            else imageUrl = userProfile;
             await setDoc(doc(collection(firestore, 'users'), user.uid), {
                 username,
                 email,
@@ -147,7 +149,7 @@ const Login = () => {
                         Upload profile
                     </label>
                     <input type="file" id='file' style={{display:"none"}} onChange={handleAvatar}/>
-                    <input type="text" placeholder='Enter username' name='username' required/>
+                    <input type="text" placeholder='Enter name' name='username' required/>
                     <input type="email" placeholder='Enter email' name='email' required/>
                     <input type="password" placeholder='Enter password' name='password' required/>
                     <button type='submit'  disabled={signupLoading}>{signupLoading ? "Loading" : "Register"}</button>

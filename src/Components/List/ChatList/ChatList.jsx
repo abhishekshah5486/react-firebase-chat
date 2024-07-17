@@ -5,7 +5,7 @@ import { useState } from 'react';
 import userProfile from '../../../Assets/Images/userProfile2.png';
 import AddUser from './AddUser';
 
-const ChatList = () => {
+const ChatList = ({currentUser}) => {
     const [addMode, setAddMode] = useState(false);
     return (
         <div className='chat-list'>

@@ -3,11 +3,11 @@ import UserInfo from './UserInfo';
 import ChatList from './ChatList';
 
 
-const List = () => {
+const List = ({currentUser}) => {
     return (
         <div className="list">
-            <UserInfo/>
-            <ChatList/>
+            <UserInfo currentUser={currentUser}/>
+            <ChatList currentUser={currentUser}/>
         </div>
     )
 }

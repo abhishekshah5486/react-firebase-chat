@@ -6,7 +6,7 @@ import {faFaceSmile} from '@fortawesome/free-regular-svg-icons';
 import EmojiPicker from 'emoji-picker-react';
 import { useEffect, useRef, useState } from 'react';
 
-const Chat = () => {
+const Chat = ({currentUser}) => {
     const [open, setOpen] = useState(false);
     const [text, setText] = useState('');
     const endRef = useRef(null);

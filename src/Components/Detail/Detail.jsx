@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown, faDownload,  faCircleChevronDown, faCircleChevronUp} from '@fortawesome/free-solid-svg-icons';
 import tempImage from '../../Assets/Images/userProfile.jpg';
 
-const Detail = ({auth, signOut}) => {
+const Detail = ({auth, signOut, currentUser}) => {
     return (
         <div className="detail">
             <div className="detail-user-info">
